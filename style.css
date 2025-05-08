@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); 
+
+.sec-six-left {
+    animation-name: left-right;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes left-right {
+
+    0% ,100%{
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+
+}
+
+
+.img-hover {
+    scale: 1;
+}
+
+.eight-card:hover .img-hover {
+    scale: 1.1;
+    transition: .3s linear;
+}
+
+
+.footer-div{
+    position: relative;
+    overflow: hidden;
+}
+.footer-div::after{
+    height: 100%;
+    width: 50%;
+    content: '';
+    top: -100%;
+    left: 0;
+    background: #00000093;
+    transition: .4s linear;
+    position: absolute;
+
+}
+.footer-div::before{
+    content: '';
+    height: 100%;
+    width: 50%;
+    bottom: -100%;
+    right: 0;
+    background: #00000093;
+    transition: .4s linear;
+    position: absolute;
+}
+.footer-div:hover:after{
+    transition: .4s linear;
+    top: 0;
+}
+.footer-div:hover::before{
+    transition: .4s linear;
+    bottom: 0;
+}
+
+.child-div {
+  scale: 0;
+  padding: 10px 18px;
+  transition: .3s linear;
+}
+
+.footer-div:hover .child-div {
+    scale: 1;
+    z-index: 111;
+    transition: .3s linear;
+}
+
+
+
+.main-div{
+    background-image: url(img/banner-23.jpg);
+    height: 110vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header{
+    /* background-color: black; */
+    padding: 20px 50px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-bar{
+    width: 100%;
+    height: 100px;
+}
+.logo img{
+    width: 200px;
+}
+.menu ul{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    /* border: solid red 3px; */
+    font-weight: bold;
+    margin-top: 20px;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    top: 0;
+}
+li a{
+    color: white;
+    margin: 10px;
+}
+li ,a{
+    text-decoration: none;
+    list-style: none;
+}
+.toggle-btn{
+    display: none;
+}
+
+.first-section{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 190px 100px 100px 160px;
+    gap: 20px;
+}
+
+
+
+
+
+
+@media only screen and (max-width:720px){
+
+    .third-img {
+        height: 400px !important;
+    }
+
+    .third-img-2 {
+        height: 200px !important;
+        right: 20px !important;
+    }
+
+    .four-sec-img {
+        height: 450px !important;
+        bottom: 0 !important;
+    }
+
+    .four-sec-img-2 {
+        height: 200px !important;
+        right: 20px !important;
+    }
+
+    .five-sec-img {
+        height: 300px !important;
+    }
+
+    .five-sec-img-2 {
+        height: 200px !important;
+    }
+
+    .sec-six-left {
+        right: 120px !important;
+    }
+
+    .seven-sec-left {
+        height: 250px !important;
+        margin-right: 20px !important;
+    }
+
+    .detail-div {
+        bottom: -40px !important;
+        right: 25px !important;
+        height: 150px !important;
+        width: 150px !important;
+    }
+
+    .upper-div {
+        height: 300px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+    }
+
+    .corosel-p {
+        display: none;
+    }
+
+    .bottom-div  {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-around !important;
+        margin-right: 50px !important;
+    }
+
+    .map-div {
+        height: 300px !important;
+        width: 300px !important;
+    }
+
+    .img-hover {
+        height: 250px !important;
+    }
+
+    .data-div-eight {
+        width: 350px !important;
+        right:  -10px !important;
+    }
+
+    .footer-card {
+        width: 150px !important;
+        height: 150px !important;
+    }
+
+    .footer-input {
+        width: 280px !important;
+    }
+
+}
+
+
+@media only screen and (max-width:1080px) {
+    .parent {
+        display: none !important;
+    }
+    .main-div {
+        height: 900px !important;
+    }
+
+    .tess {
+        display: none !important;
+    }
+
+    .navbar-b {
+        display: none;
+    }
+}
