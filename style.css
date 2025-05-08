@@ -226,10 +226,15 @@ li ,a{
     }
 
     .footer-input {
-        width: 330px !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: space-around !important;
+        display: none !important;
+    }
+
+    .left-div-footer {
+        display: none !important;
+    }
+
+    .right-div-footer {
+        display: none !important;
     }
 
 }
